@@ -1,5 +1,5 @@
-.idea
+**/.idea
 *.iml
 *.class
-target
-*.zip1
+**/target
+**.zip1

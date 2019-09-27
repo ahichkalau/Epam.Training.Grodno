@@ -1,5 +1,5 @@
-import hurt_me_plenty.CloudGoogleHomePage;
-import hurt_me_plenty.PricingCalculatorPage;
+import hurtmeplenty.CloudGoogleHomePage;
+import hurtmeplenty.PricingCalculatorPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

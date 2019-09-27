@@ -1,4 +1,4 @@
-package i_can_win;
+package iсanwin;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

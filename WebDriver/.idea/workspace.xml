@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74c080f2-1866-48b6-a59d-790eb27e2295" name="Default Changelist" comment="" />
+    <list default="true" id="74c080f2-1866-48b6-a59d-790eb27e2295" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bring_it_on/HomePageBring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bringiton/HomePageBring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bring_it_on/ResultPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bringiton/ResultPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hurt_me_plenty/CloudGoogleHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hurtmeplenty/CloudGoogleHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hurt_me_plenty/PricingCalculatorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hurtmeplenty/PricingCalculatorPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/i_can_win/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/iсanwin/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BringItOnTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BringItOnTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HurtMePlentyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HurtMePlentyTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,7 +38,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hardcore/PricingCalculatorPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1036">
+            <state relative-caret-position="1411">
               <caret line="90" column="44" selection-start-line="90" selection-start-column="44" selection-end-line="90" selection-end-column="44" />
               <folding>
                 <element signature="method#selectCommittedUsage#0;class#PricingCalculatorPage#0" />
@@ -42,7 +53,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/hardcore/TenMinuteEMailPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="698">
+            <state relative-caret-position="884">
               <caret line="52" column="87" selection-start-line="52" selection-start-column="87" selection-end-line="52" selection-end-column="87" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -54,7 +65,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/HardcoreTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
+            <state relative-caret-position="1037">
               <caret line="69" column="31" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -71,6 +82,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -118,71 +132,73 @@
     <option name="width" value="1455" />
     <option name="height" value="870" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="PracticalTasks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PracticalTasks" type="462c0819:PsiDirectoryNode" />
+              <item name="WebDriver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebDriver" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="PracticalTasks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PracticalTasks" type="462c0819:PsiDirectoryNode" />
+              <item name="WebDriver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebDriver" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="PracticalTasks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PracticalTasks" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PracticalTasks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PracticalTasks" type="462c0819:PsiDirectoryNode" />
+              <item name="WebDriver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebDriver" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="PracticalTasks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PracticalTasks" type="462c0819:PsiDirectoryNode" />
+              <item name="WebDriver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebDriver" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hurt_me_plenty" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="PracticalTasks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PracticalTasks" type="462c0819:PsiDirectoryNode" />
+              <item name="WebDriver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebDriver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bringiton" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebDriver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebDriver" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="PracticalTasks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PracticalTasks" type="462c0819:PsiDirectoryNode" />
+              <item name="WebDriver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebDriver" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="PracticalTasks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PracticalTasks" type="462c0819:PsiDirectoryNode" />
+              <item name="WebDriver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebDriver" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/hardcore" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -382,7 +398,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49156117" visible="true" weight="0.20134228" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49156117" visible="true" weight="0.20402685" />
       <window_info id="Structure" order="1" sideWeight="0.5084388" side_tool="true" weight="0.19597316" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -451,7 +467,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/i_can_win/HomePage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/iсanwin/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
           <caret line="59" selection-start-line="59" selection-end-line="59" />
@@ -471,7 +487,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bring_it_on/HomePageBring.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/bringiton/HomePageBring.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="35" column="35" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
@@ -481,7 +497,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bring_it_on/ResultPage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/bringiton/ResultPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
@@ -491,7 +507,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hurt_me_plenty/CloudGoogleHomePage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hurtmeplenty/CloudGoogleHomePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
@@ -501,7 +517,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hurt_me_plenty/PricingCalculatorPage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hurtmeplenty/PricingCalculatorPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1037">
           <caret line="79" selection-start-line="79" selection-end-line="79" />
@@ -547,13 +563,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hardcore/CloudGoogleHomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.IdeaIC2019.1/system/temp-testng-customsuite.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -576,19 +585,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/HardcoreTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hardcore/CloudGoogleHomePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="69" column="31" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="459">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hardcore/PricingCalculatorPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1036">
+        <state relative-caret-position="1411">
           <caret line="90" column="44" selection-start-line="90" selection-start-column="44" selection-end-line="90" selection-end-column="44" />
           <folding>
             <element signature="method#selectCommittedUsage#0;class#PricingCalculatorPage#0" />
@@ -599,9 +605,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/HardcoreTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="69" column="31" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hardcore/TenMinuteEMailPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
+        <state relative-caret-position="884">
           <caret line="52" column="87" selection-start-line="52" selection-start-column="87" selection-end-line="52" selection-end-column="87" />
           <folding>
             <element signature="imports" expanded="true" />

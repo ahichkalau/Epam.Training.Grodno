@@ -1,4 +1,4 @@
-package hurt_me_plenty;
+package hurtmeplenty;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

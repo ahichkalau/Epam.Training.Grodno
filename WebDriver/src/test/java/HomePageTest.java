@@ -1,4 +1,4 @@
-import i_can_win.HomePage;
+import iсanwin.HomePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;

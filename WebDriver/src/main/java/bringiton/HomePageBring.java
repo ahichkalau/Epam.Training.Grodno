@@ -1,4 +1,4 @@
-package bring_it_on;
+package bringiton;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

@@ -1,5 +1,5 @@
-import bring_it_on.HomePageBring;
-import bring_it_on.ResultPage;
+import bringiton.HomePageBring;
+import bringiton.ResultPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

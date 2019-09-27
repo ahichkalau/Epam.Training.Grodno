@@ -1,4 +1,4 @@
-package com.epam.ErrorUniversity;
+package com.epam.errorUniversitySecondVariant;
 
 import java.util.Arrays;
 import java.util.HashMap;

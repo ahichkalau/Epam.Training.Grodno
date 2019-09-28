@@ -8,7 +8,7 @@ b) список автомобилей заданной модели, котор
 c) список автомобилей заданного года выпуска, цена которых больше указанной.*/
 
 
-package com.epam.classes;
+package com.epam.classes.car;
 
 public class Car {
     public int id;

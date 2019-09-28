@@ -3,6 +3,7 @@ package com.epam.collections;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.util.*;
 
 /*1.+Ввести строки из файла, записать в список. Вывести строки в файл в обратном порядке.
@@ -27,14 +28,8 @@ public class CollectionsOT {
     }
 
     public static void reverseTextInFile(String fileName) throws Exception{
+        ArrayList<String> arrayList = readTextWithFile(fileName);
         try {
-            FileReader fileReader = new FileReader(fileName);
-            Scanner textScan = new Scanner(fileReader);
-            ArrayList<String> arrayList = new ArrayList<String>();
-            while (textScan.hasNext()){
-                arrayList.add(textScan.nextLine());
-            }
-            fileReader.close();
             FileWriter fileWriter = new FileWriter(fileName);
             for (int i = arrayList.size() - 1; i >= 0; i--) {
                 fileWriter.write(arrayList.get(i) + "\n");
@@ -47,14 +42,8 @@ public class CollectionsOT {
     }
 
     public static void sortTextInFile(String fileName) throws Exception {
+        ArrayList<String> arrayList = readTextWithFile(fileName);
         try {
-            FileReader fileReader = new FileReader(fileName);
-            Scanner textScan = new Scanner(fileReader);
-            ArrayList<String> arrayList = new ArrayList<String>();
-            while (textScan.hasNext()){
-                arrayList.add(textScan.nextLine());
-            }
-            fileReader.close();
             Collections.sort(arrayList, new LineComparator());
             FileWriter fileWriter = new FileWriter(fileName);
             for (int i = arrayList.size() - 1; i >= 0; i--) {
@@ -77,4 +66,31 @@ public class CollectionsOT {
         }
     }
 
+    private static ArrayList<String>  readTextWithFile (String fileName){
+        ArrayList<String> arrayList = new ArrayList<String>();
+        try {
+            FileReader fileReader = new FileReader(fileName);
+            Scanner textScan = new Scanner(fileReader);
+            while (textScan.hasNext()){
+                arrayList.add(textScan.nextLine());
+            }
+            fileReader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return arrayList;
+    }
+
+    private static void writeTextInFile(String fileName, ArrayList<String> arrayList){
+        FileWriter fileWriter = null;
+        try {
+            fileWriter = new FileWriter(fileName);
+            for (int i = arrayList.size() - 1; i >= 0; i--) {
+                fileWriter.write(arrayList.get(i) + "\n");
+            }
+            fileWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }

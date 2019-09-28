@@ -1,5 +1,9 @@
 package com.epam.classes;
 
+import com.epam.classes.car.Car;
+import com.epam.classes.car.CarArray;
+import com.epam.classes.car.CarBrand;
+
 public class Main {
     public static void main(String[] args) {
         Car testCar = new Car(CarBrand.AUDI, "A4", 2003,"Black", 5000, "9474 BK-4");

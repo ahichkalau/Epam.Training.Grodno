@@ -1,4 +1,4 @@
-package com.epam.classes;
+package com.epam.classes.car;
 
 import java.util.ArrayList;
 import java.util.Calendar;

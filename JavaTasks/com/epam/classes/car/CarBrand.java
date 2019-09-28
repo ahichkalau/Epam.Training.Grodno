@@ -1,4 +1,4 @@
-package com.epam.classes;
+package com.epam.classes.car;
 
 public enum CarBrand {
 

@@ -5,14 +5,12 @@ import com.epam.collections.taxiStation.taxiException.TaxiStationException;
 public class Bus extends Car {
     int passengerCapacity;
     int numberOfFloors;
-    BusDimension busDimension;
 
     public Bus(CarBrand carBrand, String carModel, int carCost, double fuelConsumption, int maximumSpeed,
-               int passengerCapacity, int numberOfFloors, BusDimension busDimension) throws TaxiStationException {
+               int passengerCapacity, int numberOfFloors) throws TaxiStationException {
         super(carBrand, carModel, carCost, fuelConsumption, maximumSpeed);
         this.passengerCapacity = passengerCapacity;
         this.numberOfFloors = numberOfFloors;
-        this.busDimension = busDimension;
     }
 
     @Override
@@ -22,8 +20,7 @@ public class Bus extends Car {
                 ", расход топлива " + fuelConsumption +
                 ", максимальная скорость " + maximumSpeed +
                 ", пассажировместимость " + passengerCapacity +
-                ", количество этажей " + numberOfFloors +
-                ", размер автобуса " + busDimension.getDimensionName();
-
+                ", количество этажей " + numberOfFloors
+                ;
     }
 }

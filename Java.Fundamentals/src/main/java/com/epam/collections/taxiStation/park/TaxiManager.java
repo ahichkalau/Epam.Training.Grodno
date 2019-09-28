@@ -10,6 +10,12 @@ import java.util.Comparator;
 public class TaxiManager {
     ArrayList<Car> taxiArray = new ArrayList<Car>();
 
+    public TaxiManager(Car ... cars) {
+        for (Car currentCar : cars){
+            taxiArray.add(currentCar);
+        }
+    }
+
     public void addCarToPark(Car addedCar){
        taxiArray.add(addedCar);
     }

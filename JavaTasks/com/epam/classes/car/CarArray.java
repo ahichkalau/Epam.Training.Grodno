@@ -1,11 +1,15 @@
 package com.epam.classes.car;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
 
 public class CarArray {
     ArrayList<Car> carArray = new ArrayList();
 
+    public CarArray(Car ... cars) {
+        carArray.addAll(new ArrayList<>(Arrays.asList(cars)));
+    }
 
     public ArrayList getCarArray() {
         return carArray;
@@ -17,7 +21,7 @@ public class CarArray {
         return carArray;
     }
 
-    public String outputCarOneBrandName(CarBrand carBrand){
+    public String outputCarWithChoosedBrandName(CarBrand carBrand){
         String outputStringWithCarWithOneBrandName = "";
         for (int i = 0; i < carArray.size(); i++) {
             if (carArray.get(i).carBrand == carBrand){

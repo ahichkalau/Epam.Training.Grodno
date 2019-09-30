@@ -10,13 +10,13 @@ public class OptionalTask {
 
     public static void main(String[] args) {
         OptionalTask optionalTask = new OptionalTask();
-//        optionalTask.createFileWithRandomNumbers(30);
+        optionalTask.createFileWithRandomNumbers(30);
         optionalTask.readJavaFileAndWriteInReverseTextInOtherFile("TESTTT.java");
     }
 
     public void createFileWithRandomNumbers(int numberOfRandomNumber){
-        File myDir = new File("src\\resources\\io");
-        File file = new File("src\\resources\\io\\fileWithRandomNumbers.txt");
+        File myDir = new File("resources\\io");
+        File file = new File("resources\\io\\fileWithRandomNumbers.txt");
         Random randomNumber = new Random();
         try {
             PrintWriter printWriter = new PrintWriter(new BufferedWriter(new FileWriter(file)));
@@ -37,8 +37,8 @@ public class OptionalTask {
     public void readJavaFileAndWriteInReverseTextInOtherFile(String javaFileName){
 
         try {
-            FileReader fileReader = new FileReader("src\\resources\\io\\" + javaFileName);
-            File reverseFile = new File("src\\resources\\io\\reverse" + javaFileName);
+            FileReader fileReader = new FileReader("resources\\io\\" + javaFileName);
+            File reverseFile = new File("resources\\io\\reverse" + javaFileName);
             Scanner fileScanner = new Scanner(fileReader);
             PrintWriter printWriter = new PrintWriter(new BufferedWriter(new FileWriter(reverseFile)));
 

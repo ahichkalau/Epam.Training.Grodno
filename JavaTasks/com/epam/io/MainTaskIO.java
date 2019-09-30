@@ -6,14 +6,15 @@ import java.util.Scanner;
 public class MainTaskIO {
     public String str = "";
     int count = 1;
+    int directoryCount = 0;
 
 
 
     public static void main(String[] args) {
         MainTaskIO mainTaskIO = new MainTaskIO();
         mainTaskIO.getTreeDirectory("D:\\Music");
-        mainTaskIO.getTreeDirectoryWithIncludedFolders("D:\\Music");
-        mainTaskIO.getTreeDirectoryWithIncludedFolders("src\\resources\\tr.txt");
+        mainTaskIO.getTreeDirectoryWithIncludedFolders("D:\\Games");
+        mainTaskIO.getTreeDirectoryWithIncludedFolders("resources\\ResultIOMain.txt");
     }
 
     public void getTreeDirectory(String directoryPath) {
@@ -22,7 +23,7 @@ public class MainTaskIO {
 
         if (fileDirectory.isDirectory()) {
             try {
-                FileWriter fileWriter = new FileWriter("src\\resources\\tree.txt");
+                FileWriter fileWriter = new FileWriter("resources\\tree.txt");
                 PrintWriter printWriter = new PrintWriter(new BufferedWriter(fileWriter));
                 printWriter.println(fileDirectory.getName());
 
@@ -61,18 +62,19 @@ public class MainTaskIO {
             for (int i = 0; i < strings.length; i++) {
                 File file = new File(directoryPath + "\\" + strings[i]);
                 if (file.isDirectory()) {
-                    str = str.concat("|" + border.repeat(count * 5) + file.getName() + border.repeat(count * 5) + "\n");
-                    ++count;
+                    count++;
+                    directoryCount = count;
+                    str = str.concat("|" + border.repeat(directoryCount * 5) + file.getName() + border.repeat(directoryCount * 5) + "\n");
                     getTreeDirectoryWithIncludedFolders(directoryPath + "\\" + strings[i]);
+                    count--;
                 }
                 if (file.isFile()) {
-                    int fileCount = count + 1;
-                    str = str.concat(" ".repeat(fileCount) + strings[i] + "\n");
+                    str = str.concat("   ".repeat(directoryCount + 2) + strings[i] + "\n");
                 }
             }
-            count = 1;
+
             try {
-                PrintWriter printWriter = new PrintWriter(new BufferedWriter(new FileWriter("src\\resources\\tr.txt")));
+                PrintWriter printWriter = new PrintWriter(new BufferedWriter(new FileWriter("resources\\ResultIOMain.txt")));
                 printWriter.write(fileDirectory.getName() + "\n" + str);
                 printWriter.close();
             } catch (IOException e) {

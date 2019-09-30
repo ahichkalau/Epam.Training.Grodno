@@ -21,7 +21,7 @@ public class Parking extends Thread{
         if (freePlaces > 0){
             carsInTheParkingLot.add(carThread);
             freePlaces--;
-            if (freePlaces > 0){
+            if (freePlaces >= 1){
             System.out.println("Машина " + carThread.getCarBrand() + " #" + carThread.getCarID() + " припарковалась на "
                     + carThread.getParkingTime() + " часов. Осталось " + freePlaces + " свободных мест");}
             else {
@@ -47,10 +47,10 @@ public class Parking extends Thread{
 
             if (freePlaces > 0){
                 carsInTheParkingLot.add(carThread);
+                freePlaces--;
                 System.out.println("Машина " + carThread.getCarBrand() + " #" + carThread.getCarID()
                         + " припарковалась на " + carThread.getParkingTime() + " часов. Осталось "
                         + freePlaces + " свободных мест");
-                freePlaces--;
                 carsLeftTheParkingLot.add(carThread);
                 carsWaitingForParking.remove(carThread);
             }

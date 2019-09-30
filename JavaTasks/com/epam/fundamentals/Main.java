@@ -20,7 +20,12 @@ public class Main {
     }
 
     public static void outputArgumentsOfComandLineInReverse(String ... args){
-        System.out.println(new StringBuffer().append(args[0]).reverse() + "\n");
+        if (args.length > 0){
+            System.out.println(new StringBuffer().append(args[0]).reverse() + "\n");
+        }
+        else {
+            System.out.println("Please, input program arguments \n" );
+        }
     }
 
     public static void printRandomNumbers(){

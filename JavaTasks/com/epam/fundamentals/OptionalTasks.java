@@ -2,11 +2,6 @@ package com.epam.fundamentals;
 
 import java.util.Scanner;
 
-/*Задание. Ввести n чисел с консоли.
-1.     +Найти самое короткое и самое длинное число. Вывести найденные числа и их длину.
-2.     +Вывести числа в порядке возрастания (убывания) значений их длины.
-3.     +Вывести на консоль те числа, длина которых меньше (больше) средней длины по всем числам, а также длину.*/
-
 public class OptionalTasks {
     public static void main(String[] args) {
         int[] testArray = createArray();

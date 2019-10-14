@@ -25,11 +25,11 @@ class Airplane extends Thread{
         try {
             semaphore.acquire();
             System.out.println("Самолет " + airplaneNumber + " начал выход на полосу");
-            sleep(1000);
+            Thread.sleep(1000);
             System.out.println("Полоса приняла самолет");
-            sleep(1000);
+            Thread.sleep(1000);
             System.out.println("Самолет " + airplaneNumber + " взлетел");
-            sleep(1000);
+            Thread.sleep(1000);
             System.out.println("Полоса освободилась");
             semaphore.release();
         }catch (InterruptedException e) {

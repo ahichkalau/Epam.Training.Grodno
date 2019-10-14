@@ -6,6 +6,7 @@ import java.util.concurrent.LinkedBlockingDeque;
 
 public class CarCreator extends Thread {
     public static LinkedBlockingDeque<CarThread> carList = new LinkedBlockingDeque<>();
+    public static int carID = 0;
     int quantityOfCars;
 
     public CarCreator(int quantityOfCars) {

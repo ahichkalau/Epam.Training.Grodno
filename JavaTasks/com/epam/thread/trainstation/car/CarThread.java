@@ -1,5 +1,7 @@
 package com.epam.thread.trainstation.car;
 
+import com.epam.thread.trainstation.parking.CarCreator;
+
 import java.util.Random;
 
 public class CarThread extends Thread {
@@ -14,7 +16,7 @@ public class CarThread extends Thread {
         Random random = new Random();
         this.carBrand = CarBrand.values()[random.nextInt(CarBrand.values().length)].carBrandName;
         this.parkingTime = random.nextInt(23) + 1;
-        this.carID = CarCount.carID++;
+        this.carID = CarCreator.carID++;
     }
 
     public String getCarBrand() {

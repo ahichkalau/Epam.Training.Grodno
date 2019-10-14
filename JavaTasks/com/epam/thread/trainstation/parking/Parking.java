@@ -32,7 +32,7 @@ public class Parking extends Thread{
             waitAndReleaseCar(1000);
         } else {
             waitAndReleaseCar(1000);
-            if (freePlaces <= 0){
+            if (freePlaces == 0){
                 Iterator<CarThread> carThreadIterator = carsWaitingForParking.iterator();
                 while (carThreadIterator.hasNext()){
                     CarThread currentCarThread = carThreadIterator.next();
@@ -58,16 +58,12 @@ public class Parking extends Thread{
     }
 
     public void waitAndReleaseCar(int time){
-        int releaseCount = time/1000;
-        for (int i = 0; i < releaseCount; i++) {
-            try {
-                Thread.sleep(time/releaseCount);
-                carReleaseWithOutParking();
-                carReleaseAfterParking();
-            } catch (InterruptedException e){
+        try {
+            Thread.sleep(time);
+            carReleaseWithOutParking();
+            carReleaseAfterParking();
+        } catch (InterruptedException e) {
             }
-        }
-
     }
 
     public void carReleaseAfterParking(){
@@ -92,7 +88,6 @@ public class Parking extends Thread{
             currentCarThread.setWaitingTime(currentCarThread.getWaitingTime() - 1);
         }
     }
-
 
     @Override
     public void run() {

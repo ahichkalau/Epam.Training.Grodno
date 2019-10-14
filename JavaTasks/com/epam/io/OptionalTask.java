@@ -14,21 +14,20 @@ public class OptionalTask {
         optionalTask.readJavaFileAndWriteInReverseTextInOtherFile("TESTTT.java");
     }
 
-    public void createFileWithRandomNumbers(int numberOfRandomNumber){
-        File myDir = new File("resources\\io");
-        File file = new File("resources\\io\\fileWithRandomNumbers.txt");
+    public void createFileWithRandomNumbers(int quantityOfRandomNumbers){
+        File createdFile = new File("resources\\io\\fileWithRandomNumbers.txt");
         Random randomNumber = new Random();
         try {
-            PrintWriter printWriter = new PrintWriter(new BufferedWriter(new FileWriter(file)));
-            ArrayList<Integer> arrayList = new ArrayList<>();
-            for (int i = 0; i < numberOfRandomNumber; i++) {
-                arrayList.add(randomNumber.nextInt(1000));
+            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(createdFile));
+            ArrayList<Integer> listOfRandomNumbers = new ArrayList<>();
+            for (int i = 0; i < quantityOfRandomNumbers; i++) {
+                listOfRandomNumbers.add(randomNumber.nextInt(1000));
             }
-            Collections.sort(arrayList);
-            for (Integer count:arrayList) {
-                printWriter.write(count + "\n");
+            Collections.sort(listOfRandomNumbers);
+            for (Integer count:listOfRandomNumbers) {
+                bufferedWriter.write(count + "\n");
             }
-            printWriter.close();
+            bufferedWriter.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -44,15 +43,10 @@ public class OptionalTask {
 
             while (fileScanner.hasNext()){
                 String originalString = fileScanner.nextLine();
-                String reverseString = new String();
-                for (int i = originalString.length() - 1; i >= 0; i--) {
-                    reverseString += originalString.toCharArray()[i];
-                }
+                StringBuffer reverseString = new StringBuffer(originalString).reverse();
                 printWriter.write(reverseString + "\n");
             }
             printWriter.close();
-            fileScanner.close();
-
         } catch (IOException e) {
             e.printStackTrace();
         }

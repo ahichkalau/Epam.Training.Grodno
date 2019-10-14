@@ -1,13 +1,13 @@
-A text (in the sense of literary theory) is any object that can be read, including:
-
-Documents:
-Religious text, a writing that a religious tradition considers to be sacred
-Textbook, a book of instruction in any branch of study
-Text may also refer to:
-
-Computing and telecommunications
-Plain text, unformatted text
-Text file, a type of computer file opened by most text software
-Text string, a sequence of character] manipulated by software
-Text message, a short electronic message designed for communication between mobile phone users
 Text (Chrome app), a text editor for the Google Chrome web browser
+Text message, a short electronic message designed for communication between mobile phone users
+Text string, a sequence of character] manipulated by software
+Text file, a type of computer file opened by most text software
+Plain text, unformatted text
+Computing and telecommunications
+
+Text may also refer to:
+Textbook, a book of instruction in any branch of study
+Religious text, a writing that a religious tradition considers to be sacred
+Documents:
+
+A text (in the sense of literary theory) is any object that can be read, including:

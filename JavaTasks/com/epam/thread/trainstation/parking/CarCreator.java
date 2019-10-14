@@ -22,7 +22,6 @@ public class CarCreator extends Thread {
                 Thread.sleep(1000);
             }
             catch (InterruptedException e){
-
             }
         }
         System.out.println("Машин больше не будет");

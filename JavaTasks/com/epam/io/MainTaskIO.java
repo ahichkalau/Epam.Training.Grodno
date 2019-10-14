@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.Scanner;
 
 public class MainTaskIO {
-    public String str = "";
+    public StringBuffer fileCatalog = new StringBuffer();
     int count = 1;
     int directoryCount = 0;
 
@@ -58,25 +58,26 @@ public class MainTaskIO {
         File fileDirectory = new File(directoryPath);
         if (fileDirectory.isDirectory()) {
             String border = "--";
-            String[] strings = fileDirectory.list();
-            for (int i = 0; i < strings.length; i++) {
-                File file = new File(directoryPath + "\\" + strings[i]);
-                if (file.isDirectory()) {
+            String[] fileDirectoryList = fileDirectory.list();
+            for (int i = 0; i < fileDirectoryList.length; i++) {
+                File checkedFile = new File(directoryPath + "\\" + fileDirectoryList[i]);
+                if (checkedFile.isDirectory()) {
                     count++;
                     directoryCount = count;
-                    str = str.concat("|" + border.repeat(directoryCount * 5) + file.getName() + border.repeat(directoryCount * 5) + "\n");
-                    getTreeDirectoryWithIncludedFolders(directoryPath + "\\" + strings[i]);
+                    fileCatalog = fileCatalog.append("|" + border.repeat(directoryCount * 5)
+                            + checkedFile.getName() + border.repeat(directoryCount * 5) + "\n");
+                    getTreeDirectoryWithIncludedFolders(directoryPath + "\\" + fileDirectoryList[i]);
                     count--;
                 }
-                if (file.isFile()) {
-                    str = str.concat("   ".repeat(directoryCount + 2) + strings[i] + "\n");
+                if (checkedFile.isFile()) {
+                    fileCatalog = fileCatalog.append("  ".repeat(directoryCount * 5) + fileDirectoryList[i] + "\n");
                 }
             }
 
             try {
-                PrintWriter printWriter = new PrintWriter(new BufferedWriter(new FileWriter("resources\\ResultIOMain.txt")));
-                printWriter.write(fileDirectory.getName() + "\n" + str);
-                printWriter.close();
+                BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("resources\\ResultIOMain.txt"));
+                bufferedWriter.write(fileDirectory.getName() + "\n" + fileCatalog);
+                bufferedWriter.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -96,11 +97,12 @@ public class MainTaskIO {
                         fileCount++;
                     }
                 }
+                fileReader.close();
                 System.out.println("Количество папок " + directoryCount + "\n" +
                         "Количество файлов " + fileCount + "\n" +
                         "Среднее количество файлов в папке " + (double)fileCount/directoryCount + "\n" +
                         "Средняя длина названия файла " + (double)averageFileLength/fileCount);
-            } catch (FileNotFoundException e) {
+            } catch (IOException e) {
                 e.printStackTrace();
             }
         }

@@ -15,10 +15,7 @@ public class Cargo extends Car {
 
     @Override
     public String toString() {
-        return carBrand + " " +  carModel  +
-                ", стоимость " + carCost +
-                ", расход топлива " + fuelConsumption +
-                ", максимальная скорость " + maximumSpeed +
+        return super.toString() +
                 ", грузоподъемность " + loadingCapacity +
                 ", объем грузового отсека " + compartmentVolume
                 ;

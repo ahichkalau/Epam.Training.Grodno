@@ -17,7 +17,7 @@ public class PricingCalculatorPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//input[@id='input_53']")
+    @FindBy(xpath = "//input[contains(@ng-model,'quantity')]")
     WebElement numberOfInstance;
 
     @FindBy(xpath = "//md-select[@placeholder='VM Class']")
@@ -119,7 +119,8 @@ public class PricingCalculatorPage {
     }
 
     private void webElementWaitToBeClickableAndClick(String pathToWebElement){
-        new WebDriverWait(driver, 20).until(ExpectedConditions.presenceOfElementLocated(By.xpath(pathToWebElement)));
+        new WebDriverWait(driver, 20).until(ExpectedConditions
+                .presenceOfElementLocated(By.xpath(pathToWebElement)));
         new WebDriverWait(driver, 15)
                 .until(ExpectedConditions.elementToBeClickable(By.xpath(pathToWebElement))).click();
     }

@@ -20,7 +20,7 @@ public class PricingCalculatorPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//input[@id='input_53']")
+    @FindBy(xpath = "//input[contains(@ng-model,'quantity')]")
     WebElement numberOfInstance;
 
     @FindBy(xpath = "//md-select[@placeholder='VM Class']")

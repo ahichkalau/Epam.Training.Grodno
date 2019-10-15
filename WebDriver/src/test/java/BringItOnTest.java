@@ -51,8 +51,9 @@ public class BringItOnTest {
     @Test
     public void verificationSyntaxHighlighting(){
         WebElement bashFrame = driver.findElement(By.xpath("//ol[@class='bash']"));
-        Assert.assertFalse(bashFrame.findElements(By.className("kw2")).isEmpty() |
-                bashFrame.findElements(By.className("st0")).isEmpty(),
+        WebElement codeFormat = bashFrame.findElement(By.className("kw2"));
+        WebElement codeFormatForComment = bashFrame.findElement(By.className("st0"));
+        Assert.assertTrue(codeFormat.isDisplayed() | codeFormatForComment.isDisplayed(),
                 "The Bash syntax is not highlighted");
     }
 

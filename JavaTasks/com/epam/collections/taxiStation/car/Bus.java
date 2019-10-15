@@ -15,10 +15,7 @@ public class Bus extends Car {
 
     @Override
     public String toString() {
-        return carBrand + " " +  carModel  +
-                ", стоимость " + carCost +
-                ", расход топлива " + fuelConsumption +
-                ", максимальная скорость " + maximumSpeed +
+        return super.toString() +
                 ", пассажировместимость " + passengerCapacity +
                 ", количество этажей " + numberOfFloors
                 ;

@@ -1,6 +1,6 @@
-import hardcore.CloudGoogleHomePage;
 import hardcore.PricingCalculatorPage;
 import hardcore.TenMinuteEMailPage;
+import hurtmeplenty.CloudGoogleHomePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -33,6 +33,7 @@ public class HardcoreTest {
                 .selectDataCenterLocation("Frank")
                 .selectCommittedUsage(1)
                 .addToEstimate()
+                .switchToOtherPackage()
                 .emailEstimate()
                 .createNewTab()
                 .switchTab()
@@ -62,7 +63,8 @@ public class HardcoreTest {
 
      @Test(dependsOnMethods = "openPage")
      public void checkCost(){
-        Assert.assertEquals(PricingCalculatorPage.estimatedMonthlyCostInCalculator, TenMinuteEMailPage.estimatedMonthlyCostInEMail);
+        Assert.assertEquals(PricingCalculatorPage.estimatedMonthlyCostInCalculator,
+                TenMinuteEMailPage.estimatedMonthlyCostInEMail);
 
      }
 

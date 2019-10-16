@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 
 public class TenMinuteEMailPage {
     public static final String TEN_MINUTE_EMAIL = "https://10minutemail.com/";
-    public static String eMailAdress;
+    static String eMailAdress;
     public static Double estimatedMonthlyCostInEMail;
     WebDriver driver;
 

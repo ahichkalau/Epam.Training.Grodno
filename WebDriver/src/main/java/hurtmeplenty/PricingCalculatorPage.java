@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class PricingCalculatorPage {
-    WebDriver driver;
+    public WebDriver driver;
 
     public PricingCalculatorPage(WebDriver driver){
         this.driver = driver;
@@ -113,22 +113,26 @@ public class PricingCalculatorPage {
         return this;
     }
 
-    private void webElementWaitToBeClickableAndClick(WebElement clickableWebElement){
-        new WebDriverWait(driver, 5)
+    protected void webElementWaitToBeClickableAndClick(WebElement clickableWebElement){
+        new WebDriverWait(driver, 15)
                 .until(ExpectedConditions.elementToBeClickable(clickableWebElement)).click();
     }
 
-    private void webElementWaitToBeClickableAndClick(String pathToWebElement){
+    protected void webElementWaitToBeClickableAndClick(String pathToWebElement){
         new WebDriverWait(driver, 20).until(ExpectedConditions
                 .presenceOfElementLocated(By.xpath(pathToWebElement)));
         new WebDriverWait(driver, 15)
                 .until(ExpectedConditions.elementToBeClickable(By.xpath(pathToWebElement))).click();
     }
-
-    private void openCheckBox(WebElement openedCheckBox){
+    
+    protected void openCheckBox(WebElement openedCheckBox){
         while (openedCheckBox.getAttribute("aria-expanded" ).equalsIgnoreCase("false")){
             new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(openedCheckBox))
                     .click();
         }
+    }
+
+    public hardcore.PricingCalculatorPage switchToOtherPackage() {
+        return new hardcore.PricingCalculatorPage(driver);
     }
 }
